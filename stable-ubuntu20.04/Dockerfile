@@ -6,6 +6,7 @@ RUN apt-get update && \
     apt-add-repository ppa:ansible/ansible && \
     apt-get update && \
     apt install git -y && \
+    apt install vim -y && \
     apt-get install -y ansible
 
 RUN echo '[local]\nlocalhost\n' > /etc/ansible/hosts
